@@ -4,86 +4,200 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Raleway:ital@0;1&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/11dbdcc5a3.js" crossorigin="anonymous"></script>
 
     <title>studyBuddy</title>
   </head>
   <body>
     <section id="title">
+      <div class="container-fluid">
       <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">studyBuddy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="navbar-item">
+              <a href="#footer" class="nav-link">Contact</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#pricing" class="nav-link">Pricing </a>
+            </li>
+            <li class="navbar-item">
+              <a href="#cta" class="nav-link">Download</a>
+            </li>
+          </ul>
+        </div>
+       </nav>
       <!-- Title -->
-      <div>
-        <h1>Meet new and interesting study buddies.</h1>
-        <button type="button" name="button">Download</button>
-        <button type="button" name="button">Download</button>
+    <div class="row">
+      <div class="col-lg-6">
+        <h1>Expand your study circle with exciting new buddies!</h1>
+        <button type="button" name="button" class="btn btn-dark btn-lg download-button apple"> <i class="fa-brands fa-apple"></i> Download</button>
+        <button type="button" name="button" class="btn btn-lg download-button google"> <i class="fa-brands fa-google-play"></i> Download</button>
       </div>
-      <div>
-      <img src="images/iphone-400.png" alt="iphone with study buddy app">
-
+      <div class="col-lg-6">
+      <img class="title-image" src="images/iphone-400.png" alt="iphone with study buddy app">
       </div>
+    </div>
+    </div> 
     </section>
 
     <!--  Features -->
     <section id="features">
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="icon fa-solid fa-star fa-3x"></i>      <h3 class="icon-heading">Easy to use.</h3>
+          <br>
+      <p>StudyBuddy makes finding a study partner a breeze!</p>
+    </div>
 
-      <h3>Easy to use.</h3>
-      <p>So easy to use, you can do it in your sleep!</p>
+      <div class="feature-box col-lg-4">
+        <i class="icon fa-regular fa-thumbs-up fa-3x"></i>      <h3 class="icon-heading">Meet new People!</h3>
+        <br>
+      <p>We have study buddies for every subject. </p>
+    </div>
 
-      <h3>Fantastic Students</h3>
-      <p> We have study buddies for all majors. </p>
-
-      <h3>Guaranteed to always have a study buddy.</h3>
+      <div class="feature-box col-lg-4">
+        <i class="icon fa-regular fa-face-smile fa-3x"></i>
+          <h3 class="icon-heading">Over 10,000 students trust StudyBuddy!</h3>
+    </div>
+      </div>
     </section>
 
     <!-- Testimonials -->
 
     <section id="testimonials">
-      <h2>I no longer have to study alone. No more cramming. Lower stress!</h2>
-      <img src="images/study-img-300.jpg" alt="study image with buddy by eliott-reyna-Unsplashed.com">
-      <em>Cindy, UCSD</em>
+
+      <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2 class="testimonial-quote">Finding a study partner through StudyBuddy has been a game-changer. No more stressful all-nighters—studying is now efficient and enjoyable!</h2>
+            <img class="testimonial-image" src="images/study1.jpg" alt="two girls studying">
+            <br>
+            <br>
+            <em>- Liz, USD</em>
+          </div>
+          <div class="carousel-item">
+            <h2 class="testimonial-quote">With StudyBuddy, I've met amazing study pals. We tackle tough subjects together, making learning a blast!</h2>
+            <img class="testimonial-image" src="images/study2.jpg" alt="2 people studying together">
+            <br>
+            <br>
+            <em>- Natty, Stanford</em>
+          </div>
+          <div class="carousel-item">
+            <h2 class="testimonial-quote">Studying used to be a drag, but with StudyBuddy, it's become a social, stress-free experience!</h2>
+            <img class="testimonial-image" src="images/study3.jpg" alt="2 people studying in the library">
+            <br>
+            <br>
+            <em>- Jonathan, SDSU</em>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
 
     </section>
+
+    <!--Press-->
+    <section id="press">
+    <img class="press-logo" src="images/study-smarter-logo.png" alt="study smarter image">  
+    <img class="press-logo" src="images/a-1.png" alt="a1 academy of study image">    
+    <img class="press-logo" src="images/game-one.png" alt="game one academic games image">
+    <img class="press-logo" src="images/stellar-grades-academy.png" alt="stellar grades academy image">
+    </section>
+
     <!-- Pricing -->
 <section id="pricing">
 
-    <h2>A Plan for Every Student's Budget</h2>
+
+    <h2 class="pricing-header">A Plan for Every Student's Budget</h2>
     <p>Simple and affordable price plans for your learning aspirations.</p>
 
-    <h3>Honors</h3>
-    <h2>Free</h2>
+<div class="row">
+  <div class="pricing-column col-lg-4 col-md-6">
+<div class="card">
+  <div class="card-header">
+    <h3 class="pricing-name">Honors</h3>
+  </div>
+  <div class="card-body">
+    <h2 class="cost">Free</h2>
     <p>5 Matches Per Day</p>
     <p>10 Messages Per Day</p>
     <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
+    <button class="btn btn-lg btn-black btn-outline-dark" type="button">Sign Up</button>
+  </div>
+</div>
+</div>
 
-
-    <h3>Dean's List</h3>
-    <h2>29.99</h2>
+<div class="pricing-column col-lg-4 col-md-6">
+<div class="card">
+  <div class="card-header">
+    <h3 class="pricing-name">Dean's List</h3>
+  </div>
+  <div class="card-body">
+    <h2 class="cost">$29.99</h2>
     <p>Unlimited Matches Per Day</p>
     <p>Unlimited Messages Per Day</p>
     <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
+    <button class="btn btn-lg btn-black btn-outline-dark" type="button">Sign Up</button>
+  </div>
+</div>
+</div>
 
-    <h3>Magna Cum Laude Honors</h3>
-    <h2>59.99</h2>
+<div class="pricing-column col-lg-4 col-md-12">
+  <div class="card">
+  <div class="card-header">
+    <h3 class="pricing-name">Magna Cum Laude Honors</h3>
+  </div>
+  <div class="card-body">
+    <h2 class="cost">$59.99</h2>
     <p>Priority Listing</p>
     <p>Unlimited Matches Per Day</p>
     <p>Unlimited Messages Per Day</p>
     <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
+    <button class="btn btn-lg btn-black btn-outline-dark" type="button">Sign Up</button>
+  </div>
+</div>
+</div> 
+</div>
+
+
+
 
 </section>
 
 <!-- Call To Action -->
 <section id="cta">
-  <h3>Find your bestest study buddy today! Your best learning awaits.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
+  <h3 class="cta-heading">Discover your ideal study partner today! Unleash your ultimate learning experience.</h3>
+    <button type="button" class="btn btn-lg btn-dark download-button apple"> <i class="fa-brands fa-apple"></i> Download</button>
+    <button type="button" class="btn btn-lg download-button google"> <i class="fa-brands fa-google-play"></i> Download</button>
 
 </section>
 <footer id="footer">
+  <i class="social-icon fa-brands fa-youtube"></i>
+  <i class="social-icon fa-brands fa-facebook"></i>
+  <i class="social-icon fa-brands fa-instagram"></i>
+  <i class="social-icon fa-brands fa-x-twitter"></i>
+  <i class="social-icon fa-regular fa-envelope"></i>
+  <i class="social-icon fa-brands fa-linkedin"></i>
   <p>Copyright 2020 studyBuddy</p>
 </footer>
     <!-- Optional JavaScript -->
