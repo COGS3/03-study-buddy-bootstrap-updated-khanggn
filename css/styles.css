@@ -1,2 +1,184 @@
 
 /* COGS3 studyBuddy specific styles go here. */
+body{
+    font-family: 'Playwrite DE Grund';
+}
+
+#title{
+    background-color: #508D4E;
+}
+
+h1 {
+    font-family: 'Playwrite DE Grund';
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 2;
+    color: white;
+    padding-bottom: 5%;
+}
+h2{
+    color: white;
+    font-family: 'Playwrite DE Grund';
+    font-size: 1.5;
+    font-weight: bold;
+}
+
+h3{
+    font-family: 'Playwrite DE Grund';
+    font-weight: bold;
+}
+
+p{
+    color: #8f8f8f;
+}
+
+.container-fluid{
+    padding: 3% 15%;
+}
+
+.navbar{
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand{
+    font-family: 'Raleway';
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.navbar-item{
+    padding: 0 18px;
+}
+
+.navbar-link{
+    font-family: 'Playwrite DE Grund';
+    font-size: 1.2rem;
+}
+
+.download-button{
+    margin: 5% 3% 5% 0%;
+}
+
+.apple{
+    background-color: #1A5319;
+}
+
+.google{
+    background-color: #89c488;
+}
+
+.title-image{
+    width: 60%;
+    transform: rotate(20deg);
+    position: absolute;
+}
+
+#features{
+    padding: 7% 15%;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 5%;
+}
+
+.icon{
+    color: #cdb891;
+    margin-bottom: 1rem;
+}
+
+.icon:hover{
+    color: #508D4E;
+}
+
+.icon-heading{
+    line-height: 1.5;
+    color: #1A5319;
+}
+
+#testimonials{
+    text-align: center;
+    background-color: #508D4E;
+}
+
+.carousel-item{
+    padding: 7% 15%;
+}
+
+.testimonial-image{
+    width: 40%;
+    border-radius: 15%;
+    margin-top: 60px;
+    border: solid 2.5px;
+    border-color: #89c488;
+
+}
+.testimonial-quote{
+    line-height: 1.5;
+}
+
+#press{
+    background-color: #508D4E;
+    text-align: center;
+}
+.press-logo{
+    width: 10%;
+    margin: 20px 20px 50px;
+}
+
+#pricing {
+    padding:100px;
+    text-align: center;
+}
+
+.pricing-name{
+    color: #5c3e06;
+}
+
+.pricing-header{
+    color: #1A5319;
+}
+
+.pricing-column{
+    padding: 3% 2%;
+}
+
+.cost{
+    color: #cdb891;
+}
+
+#cta{
+    background-color: #508D4E;
+    color: white;
+    padding: 7% 15%;
+    text-align: center;
+}
+
+.cta-heading{
+    font-family:'Playwrite DE Grund';
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 2;
+}
+
+#footer{
+    padding: 7% 15%;
+    text-align: center;
+}
+
+.social-icon {
+    margin: 20px 10px;
+}
+
+@media (max-width: 1028px){
+    #title{
+        text-align: center;
+    }
+    .title-image{
+        position:static;
+        transform: rotate(0);
+    }
+}
